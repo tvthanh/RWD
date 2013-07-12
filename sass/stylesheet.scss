@@ -1,0 +1,24 @@
+// Assets
+// @import "assets/normalize";
+// @import "assets/font-awesome";
+// @import "assets/bootstrap";
+// @import "assets/bootstrap-responsive";
+
+@import "assets/jquery.bxslider";
+
+// Base
+@import "base/base";
+@import "base/mixins";
+@import "base/placeholder";
+
+// Partials
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";
+@import "partials/breakpoint";
+
+// Images Sprites
+// @import "compass";
+// @import "compass/utilities/sprites";
+// @import "icon/*.png";
+// @include all-icon-sprites;

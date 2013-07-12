@@ -1,0 +1,54 @@
+/*----------------------------------------------
+	Footer  
+----------------------------------------------*/
+.footer {
+	background: #303030;
+	color: #c5c5c5;
+	@include box-shadow(0 3px 0 #000);
+
+	.widget {
+		padding: 50px 0;
+		overflow: hidden;
+
+		h3 {
+			color: #35ba90;
+			@include font-size(15);
+			margin-bottom: 30px;
+		}
+
+		p {
+			@include font-size(12);
+		}
+
+		.liItem {
+			li {
+				padding: 20px 0;
+				border-bottom: 1px solid #bbb;
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+
+	.widget > li {
+		width: 24%;
+		float: left;
+		margin-right: 1%;
+	}
+
+	.footerBottom {
+		background: #191919;
+		
+		.copyright {
+			// color: #fcfcfc;
+			padding: 20px 0;
+			@include font-size(14);
+		}
+	}
+}

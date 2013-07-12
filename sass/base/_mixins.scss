@@ -1,0 +1,61 @@
+// Font size use rem unit
+@mixin font-size($size-value: 16) {
+	font-size: $size-value + px;
+	font-size: ($size-value / 10) + rem;
+}
+
+// Line height use rem unit 
+@mixin line-height($line-value: 16) {
+	line-height: $line-value + px;
+	line-height: ($line-value /10) + rem;
+}
+
+// Border radius
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Transition
+@mixin transition($trans) {
+	-webkit-transition: $trans;
+	-moz-transition: $trans;
+	-o-transition: $trans;
+	transition: $trans;
+}
+
+// Box shadow
+@mixin box-shadow($shadows) {
+	-webkit-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+
+// Triangle
+@mixin triangle($width, $height, $direction, $color) {
+	width: $width;
+	height: $height;
+
+	@if $direction == top {
+		border-right: $height/2 solid transparent;
+		border-left: $height/2 solid transparent;
+		border-bottom: $width solid $color;
+	}
+
+	@if $direction == right {
+		border-top: $height/2 solid transparent;
+		border-bottom: $height/2 solid transparent;
+		border-left: $width solid $color;
+	}
+
+	@if $direction == bottom {
+		border-right: $height/2 solid transparent;
+		border-left: $height/2 solid transparent;
+		border-top: $width solid $color;
+	}
+
+	@if $direction == left {
+		border-top: $height/2 solid transparent;
+		border-bottom: $height/2 solid transparent;
+		border-right: $width solid $color;
+	}
+}
